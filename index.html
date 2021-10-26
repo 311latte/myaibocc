@@ -1,5 +1,83 @@
 <!DOCTYPE html>
-<html>
-<head><title>Testing</title></head>
-<body><p>Working on things</p></body>
-</html>
+<html lang="en">
+<head>
+<title>Sony Aibo Robotic Dogs - myaibo.cc</title>
+<link rel="stylesheet" href="/style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="keywords" content="sony,aibo,aibo-life,myaibo,myaibo.cc,sony robot,robotics,robot,japan">
+<meta name="description" content="myaibo.cc is a website detailing Sony's Aibo robot. Learn more about the Japanese robotics line, blog with your ERS-7 and communicate with other members.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.5/css/fork-awesome.min.css" integrity="sha256-P64qV9gULPHiZTdrS1nM59toStkgjM0dsf5mK/UwBV4=" crossorigin="anonymous">
+</head>
+<body>
+<div id="content">
+<header>
+<img src="/content/img/aibo-show.png"><a href="https://aibo.com" style="float:right;font-style:bold;">Go to aibo.com --></a><br />
+<span style="margin-top:2%;margin-bottom:2%;"><a href="/">Home</a> | <a href="https://libranet.de/profile/myaibo">Announcements</a></span>
+</header>
+<div style="text-align:center">
+  <p>myaibo.cc is undergoing maintenance!</p>
+</div>
+<script type="text/javascript">
+function addCss(fileName) {
+
+    var head = document.head;
+    var link = document.createElement("link");
+  
+    link.type = "text/css";
+    link.rel = "stylesheet";
+    link.id = "darkTheme"
+    link.href = fileName;
+  
+    head.appendChild(link);
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+} 
+
+function toggleDark() {
+    var z = getCookie("dark");
+    if (z == "Enabled") {
+        var x = document.getElementById("darkTheme");
+        x.parentNode.removeChild(x);
+        document.cookie = "dark=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    } else {
+        document.cookie = "dark=Enabled; expires=Mon, 31 Dec 2029 12:00:00 UTC; path=/;";
+        addCss('/dark.css');
+    }
+}
+
+function detectDark() {
+    var x = getCookie("dark");
+    if (x == "Enabled") {
+        addCss("/dark.css");
+    }
+}
+
+document.getElementById("content").onload = detectDark();
+</script>
+<footer>
+<div id="copyright">
+<p style="text-align:center;font-size:12pt;">
+<a href="https://libranet.de/u/myaibo" aria-label="Friendica"><i class="fa fa-friendica" aria-hidden="true"></i></a>
+<a href="https://www.instagram.com/myaibo.cc/" aria-label="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+<a href="https://twitter.com/myaibotweets" aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+</p>
+<p id="disclaimer">Aibo and Sony are registered trademarks of Sony Corporation. This website is not affiliated with Sony Corporation.</p>
+<p><a onclick="toggleDark();"><img width="10.666666666666666" height="10.666666666666666" src="/content/img/toggle.svg" alt="Toggle icon" />Toggle dark theme</a></p>
+</div>
+</footer>
+</body>

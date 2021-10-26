@@ -1,0 +1,21 @@
+body {
+    background-color: #3d3d3d;
+}
+
+#content {
+    background-color: #5a5a5a;
+    color: #e5e5e5;
+}
+
+footer {
+    background-color: #4c4c4c;
+}
+
+
+a, a:visited {
+    color: #f7677d;
+}
+
+a:hover {
+    color: #f70025;
+}

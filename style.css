@@ -1,0 +1,55 @@
+body {
+        background-color: #a6a6a6;
+        background-image: url("content/img/pattern_pink_tn.png");
+}
+
+footer {
+        background-color: #c0c0c0;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+header {
+        border-bottom: 1px solid black;
+        font-family: "Arial Black", Gadget, sans-serif;
+}
+
+a, a:visited {
+        color: #f9094d;
+        text-decoration: none;
+}
+
+a:hover {
+        color: #6b000e;
+        text-decoration: none;
+        font-weight: bolder;
+}
+
+img {border-radius: 15px;}
+
+#content {
+        background-color: #FFFFFF;
+        color: #1e1e1e;
+        margin:9% 2% 9% 2%;
+        padding:1% 1% 1% 1%;
+        border-radius: 15px;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#content iframe, img, video {max-width:97%;}
+
+#header-sony {display: inline;}
+
+#header-sony {display: inline;}
+
+#copyright {
+        font-size: 8pt;
+        text-align:center;
+        padding-top: 1px;
+        padding-bottom: 1px;
+}
+
+#aibo-show {text-align:center;}
+
+#aibo-show img {border: 1px solid grey;}
+
+.bold {font-weight:bold;}
